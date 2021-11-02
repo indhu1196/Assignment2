@@ -1,0 +1,13 @@
+public class LargestNum {
+    public void large(int a, int b, int c) {
+        int d,e;
+        d = (a>b)?a:b;
+        e = (d>c)?d:c;
+        System.out.println("The Greatest of three numbers is: "+e); 
+      }
+    public static void main(String args[]) {
+      LargestNum largestNum = new LargestNum();
+       largestNum.large(48,60,95);
+      
+    }
+}
