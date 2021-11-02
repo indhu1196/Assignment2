@@ -1,0 +1,18 @@
+public class diffSign {
+   
+    static boolean oppSigns(int x, int y)
+    {
+        return ((x ^ y) < 0);
+    }
+       
+    public static void main(String[] args)
+    {
+        int a = 100, b = -100;
+        if (oppSigns(a, b) == true) {
+            System.out.println("Signs are opposite");
+        }
+        else {
+            System.out.println("Signs are not opposite");
+        }
+    }
+}
