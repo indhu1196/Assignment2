@@ -1,0 +1,25 @@
+public class Calculator {
+    public void sum(int a, int b){
+        int sum = a + b;
+        System.out.println("Sum of a+b = " + sum);
+    }
+    public void sub(int a, int b){
+        int sub = a - b;
+        System.out.println("Subtraction of a-b = " + sub);
+    }
+    public void mul(int a, int b){
+        int mul = a + b;
+        System.out.println("Multilpication of a*b = " + mul);
+    }
+    public void div(int a, int b){
+        int div = a / b;
+        System.out.println("Division of a/b = " + div);
+    }
+    public static void main(String args[]) {
+        Calculator calculator = new Calculator();
+        calculator.sum(8,9);
+        calculator.sub(87,9);
+        calculator.mul(48,91);
+        calculator.div(10,9);
+    }
+}
