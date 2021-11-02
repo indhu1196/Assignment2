@@ -1,0 +1,33 @@
+public class Overloading {
+   
+    public void add(int a, int b)
+    {
+        int sum = a + b;
+        System.out.println("Sum of 2 numbers is " + sum);
+    }
+    
+    public void add(int a, int b, int c)
+    {
+        int sum = a + b + c;
+        System.out.println("Sum of 3 numbers is " + sum);
+    }
+    public void mul(int a, int b)
+    {
+        int mul = a * b;
+        System.out.println("Multiplication of 2 numbers is " + mul);
+    }
+    public void mul(int a, int b, int c)
+    {
+        int mul = a * b * c;
+        System.out.println("Multiplication of 3 numbers is " + mul);
+    }
+       
+    public static void main(String[] args) {
+        Overloading overloading = new Overloading();
+        overloading.add(5,9);
+        overloading.add(5,9,4);
+        overloading.mul(5,9);
+        overloading.mul(5,9,4);
+        
+    }
+}
