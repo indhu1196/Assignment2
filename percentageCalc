@@ -1,0 +1,43 @@
+abstract class Marks {
+    public abstract float getPercentage();
+}
+class A extends Marks {
+    int mark1, mark2, mark3;
+    A(int m1, int m2, int m3) {
+        this.mark1 = m1;
+        this.mark2 = m2;
+        this.mark3 = m3;
+    }
+    
+    @Override
+    public float getPercentage() {
+        float percentage = (((mark1+mark2+mark3)/(float)300)*100);
+        System.out.println("The Percentage of Student A is " + percentage);
+        return percentage;
+    }
+}
+class B extends Marks {
+   int mark1, mark2, mark3, mark4;
+    B(int m1, int m2, int m3, int m4) {
+        this.mark1 = m1;
+        this.mark2 = m2;
+        this.mark3 = m3;
+        this.mark4 = m4;
+    }
+    
+    @Override
+    public float getPercentage() {
+        float percentage = (((mark1+mark2+mark3+mark4)/(float)400)*100);
+        System.out.println("The Percentage of Student B is " + percentage);
+        return percentage;
+    }
+}
+public class MyClass {
+    public static void main(String args[]) {
+      A a = new A(90, 69, 56);
+      a.getPercentage();
+      
+      B b = new B(80, 70, 60, 80);
+      b.getPercentage();
+    }
+}
