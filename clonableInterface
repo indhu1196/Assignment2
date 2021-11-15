@@ -1,0 +1,21 @@
+import java.lang.Cloneable;
+class Product implements Cloneable {
+    String productName;
+    int count;
+    public Product(String productName, int count) {
+        this.productName = productName;
+        this.count = count;
+    }
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+  
+public class Test {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Product product = new Product("iMac", 5);
+        Product pro = (Product)product.clone();
+  
+        System.out.println("Product: " +pro.productName + " ; Count: "+pro.count);
+    
